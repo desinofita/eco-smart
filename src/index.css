@@ -18,3 +18,12 @@ section {
   border-radius: 10px;
   border: 1px solid #cfe2cf;
 }
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+h2 {
+  color: #287443;
+}
