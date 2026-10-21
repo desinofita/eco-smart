@@ -1,18 +1,30 @@
-function App() {
+import Ecosmart from './components/Ecosmart';
+
+export default function App() {
   return (
     <main>
-      <header>
-        <p>EcoSmart</p>
-      </header>
+      <h1>Eco Smart - Produk Ramah Lingkungan</h1>
 
-      <section aria-labelledby="welcome-title">
-        <h1 id="welcome-title">Mulai hidup lebih ramah lingkungan.</h1>
-        <p>
-          Langkah kecil hari ini bisa membawa perubahan besar untuk bumi.
-        </p>
-      </section>
+      <Ecosmart
+        produk="Tumbler Reusable"
+        manfaat="Mengurangi sampah plastik"
+        harga={35000}
+        tersedia={true}
+      />
+
+      <Ecosmart
+        produk="Tas Belanja Kain"
+        manfaat="Mengurangi kantong plastik"
+        harga={20000}
+        tersedia={true}
+      />
+
+      <Ecosmart
+        produk="Sedotan Bambu"
+        manfaat="Alternatif sedotan sekali pakai"
+        harga={10000}
+        tersedia={false}
+      />
     </main>
-  )
+  );
 }
-
-export default App
