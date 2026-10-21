@@ -11,6 +11,7 @@ export default function Ecosmart({
       <p>Harga: Rp{harga}</p>
       <p>Status: {tersedia ? "Tersedia" : "Habis"}</p>
       <p>Ramah lingkungan: Ya</p>
+      <p>Tips: Gunakan tumbler setiap hari.</p>
     </section>
   );
 }
