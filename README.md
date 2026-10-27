@@ -1,16 +1,71 @@
-# React + Vite
+# Eco Smart — Produk Ramah Lingkungan
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Eco Smart adalah aplikasi berbasis React yang menampilkan produk ramah lingkungan, manfaat produk, harga, dan ketersediaan produk. Aplikasi ini dibuat menggunakan React dan Vite.
 
-Currently, two official plugins are available:
+## Tangkapan Layar Aplikasi
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Tampilan Eco Smart](./screenshot.png)
 
-## React Compiler
+*Catatan: Tambahkan file screenshot.png ke folder utama proyek agar gambar tampil di README.*
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Daftar Komponen dan Props
 
-## Expanding the Oxlint configuration
+### Komponen Ecosmart
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Komponen `Ecosmart` digunakan untuk menampilkan informasi produk ramah lingkungan.
+
+| Props | Tipe Data | Keterangan |
+|---|---|---|
+| `produk` | String | Nama produk |
+| `manfaat` | String | Manfaat produk |
+| `harga` | Number | Harga produk |
+| `tersedia` | Boolean | Menunjukkan apakah produk tersedia |
+
+### Contoh Penggunaan
+
+```jsx
+<Ecosmart
+  produk="Tumbler Reusable"
+  manfaat="Mengurangi sampah plastik"
+  harga={35000}
+  tersedia={true}
+/>
+```
+
+## Cara Menjalankan Proyek
+
+Pastikan Git dan Node.js sudah terpasang di komputer.
+
+### 1. Clone repository
+
+```bash
+git clone https://github.com/desinofita/eco-smart.git
+```
+
+### 2. Masuk ke folder proyek
+
+```bash
+cd eco-smart
+```
+
+### 3. Instal dependensi
+
+```bash
+npm install
+```
+
+### 4. Jalankan aplikasi
+
+```bash
+npm run dev
+```
+
+Buka alamat lokal yang ditampilkan di terminal, biasanya `http://localhost:5173`.
+
+## Penggunaan AI
+
+AI digunakan sebagai alat bantu selama pengembangan proyek untuk memahami kode React, memeriksa kesalahan penulisan import komponen, membantu konfigurasi deployment GitHub Pages, dan menyusun dokumentasi README. Hasilnya diperiksa dan disesuaikan dengan proyek Eco Smart.
+
+## Link Website
+
+https://desinofita.github.io/eco-smart/
