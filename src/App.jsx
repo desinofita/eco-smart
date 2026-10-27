@@ -1,4 +1,4 @@
-import Ecosmart from './components/Ecosmart';
+import Ecosmart from './components/ecosmart';
 
 export default function App() {
   return (
